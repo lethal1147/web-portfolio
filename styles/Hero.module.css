@@ -1,0 +1,70 @@
+.heroSection {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* background-image: url(../public/background-dark.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(85%); */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 17.5rem;
+  }
+  
+.heroTextContainer {
+    color: #F1F6F9;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 65%;
+    line-height: 35px;
+    font-size: 1.75rem;
+
+}
+
+.heroTextContainer i, 
+.heroTextContainer b {
+  color:  #747F95;
+}
+
+.heroBtnContainer {
+  display: flex;
+  gap: 7.5rem;
+  width: 100%;
+  justify-content: center;
+  padding-right: 75px;
+}
+
+.heroLink {
+  color: #fff;
+  background-color: #394867;
+  border: none;
+  border-radius: 25px;
+  width: 150px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.heroLink:hover,
+.heroLink:active {
+  background-color: #212A3E;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all linear 0.25s;
+  cursor: pointer;
+}
+
+.heroImageContainer {
+  width: 35%;
+  display: flex;
+  /* padding: 2rem 6rem; */
+}
+
+.heroImageContainer img {
+  width: 120%;
+  border-radius: 9999px;
+  filter: brightness(75%)
+}
