@@ -7,8 +7,8 @@ export default function HeroSection() {
             <div className={styles.heroTextContainer}>
                 <h2>Hello, I am <i>Joakim Dahlstrom</i></h2>
                 <p>
-                    I'm a <b>Full Stack Developer</b> skilled in <b>React,</b><br />
-                    <b>NextJS, JavaScript</b> and <b>TypeScript.</b><br />
+                    I'm a <b>Full Stack Developer</b> skilled in <b>React,</b>
+                    <b>NextJS, JavaScript</b> and <b>TypeScript.</b>
                     I work with agile methodology.
                 </p>
                 <p>Let's create something great together!</p>

@@ -84,3 +84,8 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .link img:hover {
+    filter: brightness(75%);
+    transition: filter linear 0.3s;
+  }

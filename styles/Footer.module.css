@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+.footer h4 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color :#5870a0;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.socialContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer a:hover,
+.footer a:active {
+    color: #394867;
+    transition: all linear 0.3s;
+}

@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   color: #F1F6F9;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(241, 246, 249,0.5);
 }
 
 .sectionHeader {
@@ -20,69 +22,45 @@
   font-size: 3rem;
   font-weight: 700;
 }
+/* 
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+} */
 
-.carousel {
-    display: flex;
-    flex-wrap: nowrap;
-    /* overflow-x: scroll; */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    height: 500px;
-  }
-  
-  .card {
-    /* position: relative; */
-    min-width: 250px;
-    height: 60%;
-    margin-right: 20px;
-    padding: 10px 20px;
-    background-color: #394867;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* scroll-snap-align: center; */
-    transition: transform 0.3s ease-in-out;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .card img {
-    display: block;
-    margin: 0 auto;
-    max-width: 75%;
-  }
-  
-  .card h3 {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    font-weight: 800;
-    text-align: center;
-    text-decoration: underline;
-    color: #747F95;
-  }
-  
-  .card p {
-    margin-top: 10px;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  .card.active {
-    transform: scale(1.1);
-    z-index: 1;
-    height: 75%;
-  }
-  
-  .card.side {
-    opacity: 0.5;
-    pointer-events: none;
-  }
-  
-  .card.side img {
-    filter: grayscale(1);
-    /* width: 100%; */
-  }
+.skillCard {
+  width: 15rem;
+  height: 17.5rem;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  background-color: #394867;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
-  .skillBtnContainer {
-    justify-self: center;
-  }
+.skillLogoContainer {
+  background-color: #5870a0;
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skillLogo {
+  width: 150px;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.skillName {
+  color: #5870a0;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.skillLevel {
+  font-size: 1.1rem;
+}

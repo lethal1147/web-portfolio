@@ -86,6 +86,8 @@ body {
   overflow-x: hidden;
   background-image: url(../public/background-dark.jpg);
   background-size: cover;
+  color: #F1F6F9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
