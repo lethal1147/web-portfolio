@@ -18,7 +18,7 @@ const projects: project[] = [
 
 export default function ProjectsSection() {
     return (
-        <section className={styles.projectsSection}>
+        <section id="project" className={styles.projectsSection}>
             <div className={styles.sectionHeader}>
                 <h2>My Projects</h2>
                 <p>Here are some of the projects I have worked on during my coding journey.</p>

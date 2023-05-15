@@ -15,11 +15,11 @@ export default function Navbar() {
                 <span className={styles.blinker}></span>
             </div>
             <ul className={styles.navigator}>
-                <li><a className={styles.link}>AboutMe</a></li>
+                <li><a href="#" className={styles.link}>AboutMe</a></li>
                 <FontAwesomeIcon icon={faExclamation} size='xl' style={{ color: "#f1f6f9", }} />
-                <li><a className={styles.link}>Skills</a></li>
+                <li><a href="#skill" className={styles.link}>Skills</a></li>
                 <FontAwesomeIcon icon={faExclamation} size='xl' style={{ color: "#f1f6f9", }} />
-                <li><a className={styles.link}>Projects</a></li>
+                <li><a href="#project" className={styles.link}>Projects</a></li>
                 <FontAwesomeIcon icon={faExclamation} size='xl' style={{ color: "#f1f6f9", }} />
                 <li><a href="https://drive.google.com/file/d/1Ach3Jfa0pN3siJ3pD_k34pz9RkwwOtxM/view?usp=sharing" target="_blank" className={styles.link}>Resume</a></li>
                 <FontAwesomeIcon icon={faExclamation} size='xl' style={{ color: "#f1f6f9", }} />

@@ -33,7 +33,7 @@ const skills: skill[] = [
 
 export default function SkillsSection() {
   return (
-    <section className={styles.skillSection}>
+    <section id="skill" className={styles.skillSection}>
       <div className={styles.sectionHeader}>
         <h2>My Skills</h2>
         <p>Here my skills i have learned learned.</p>
@@ -53,7 +53,7 @@ export default function SkillsSection() {
           coverflowEffect={{
             rotate: 0,
             stretch: 10,
-            slideShadows: true,
+            slideShadows: false,
             depth: 100,
             modifier: 1,
           }}
