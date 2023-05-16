@@ -89,3 +89,99 @@
     filter: brightness(75%);
     transition: filter linear 0.3s;
   }
+
+  .dropdownBtn {
+    display: none;
+  }
+
+  .dropdownContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    backdrop-filter: blur(8px);
+  }
+
+  .dropdownMenu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .dropdownItem {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #F1F6F9;
+  }
+
+  .dropdownItem:hover,
+  .dropdownItem:active {
+    color: #B9BFCB;
+    transition: all linear 0.15s;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .logoContainer h3 {
+      font-size: 1rem;
+    }
+
+    .link {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 1150px) {
+    .navigator {
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .link {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    .navbarIcon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .navigator {
+      display: none;
+    }
+
+    .dropdownBtn {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .logoContainer img {
+      display: none;
+    }
+
+    .logoContainer h3 {
+      font-size: 0.8rem;
+    }
+
+    .blinker {
+      height: 20px;
+    }
+
+    .dropdownItem {
+      font-size: 1rem;
+    }
+  }

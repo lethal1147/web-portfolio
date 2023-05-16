@@ -36,7 +36,7 @@ export default function SkillsSection() {
     <section id="skill" className={styles.skillSection}>
       <div className={styles.sectionHeader}>
         <h2>My Skills</h2>
-        <p>Here my skills i have learned learned.</p>
+        <p>Here are my coding skills I have learned.</p>
       </div>
       <div>
         <Swiper
@@ -76,66 +76,12 @@ export default function SkillsSection() {
 
 export function SkillCard({ skill }: any) {
   return (
-    <div className={styles.skillCard} key={skill.id}>
+    <div className={styles.skillCard} key={`${skill.id}${skill.name}`}>
       <div className={styles.skillLogoContainer}>
         <img className={styles.skillLogo} src={skill.logo} alt={skill.name} />
       </div>
       <h3 className={styles.skillName}>{skill.name}</h3>
-      <p className={styles.skillLevel}>{skill.level}</p>
+      {/* <p className={styles.skillLevel}>{skill.level}</p> */}
     </div>
   )
 }
-
-{/* <SwiperSlide><SkillCard skill={skills[0]} /></SwiperSlide>
-<SwiperSlide><SkillCard skill={skills[1]} /></SwiperSlide>
-<SwiperSlide><SkillCard skill={skills[2]} /></SwiperSlide>
-<SwiperSlide><SkillCard skill={skills[3]} /></SwiperSlide>
-<SwiperSlide><SkillCard skill={skills[4]} /></SwiperSlide>
-<SwiperSlide><SkillCard skill={skills[5]} /></SwiperSlide>
-<SwiperSlide><SkillCard skill={skills[6]} /></SwiperSlide> */}
-
-
-
-// const handlePrevClick = () => {
-//   setActiveIndex((prevIndex) => (prevIndex === 0 ? skills.length - 1 : prevIndex - 1));
-// };
-
-// const handleNextClick = () => {
-//   setActiveIndex((prevIndex) => (prevIndex === skills.length - 1 ? 0 : prevIndex + 1));
-// };
-
-  // return (
-  //   <section className={styles.skillSection}>
-  //     <div className={styles.sectionHeader}>
-  //       <h2>My Skills</h2>
-  //       <p>Here my skills i have learned learned.</p>
-  //     </div>
-  //     <div className={styles.carousel}>
-  //       {skills.map((skill, index) => (
-  //         <div
-  //           key={skill.id}
-  //           className={`${styles.card} ${index === activeIndex ? styles.active : index < activeIndex ? styles.left : styles.right}`}
-  //           onClick={() => setActiveIndex(index)}
-  //         >
-  //           {index !== activeIndex ? (
-  //             <img src={skill.logo} alt={skill.name} />
-  //           ) : (
-  //             <>
-  //               <img src={skill.logo} alt={skill.name} />
-  //               <h3>{skill.name}</h3>
-  //               <p>{skill.level}</p>
-  //             </>
-  //           )}
-  //         </div>
-  //       ))}
-  //     </div>
-  //     <div className={styles.skillBtnContainer}>
-  //       <button className={styles.skillBtn} onClick={handlePrevClick}>
-  //         &lt;
-  //       </button>
-  //       <button className={styles.skillBtn} onClick={handleNextClick}>
-  //         &gt;
-  //       </button>
-  //     </div>
-  //   </section>
-  // );

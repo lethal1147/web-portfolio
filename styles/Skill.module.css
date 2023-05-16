@@ -22,15 +22,10 @@
   font-size: 3rem;
   font-weight: 700;
 }
-/* 
-.skillsContainer {
-  display: flex;
-  justify-content: center;
-} */
 
 .skillCard {
   width: 15rem;
-  height: 17.5rem;
+  height: 15rem;
   border-radius: 25px;
   padding: 1rem 2rem;
   background-color: #394867;
@@ -64,4 +59,41 @@
 
 .skillLevel {
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .skillSection {
+    padding: 1rem 5rem;
+  }
+
+  .skillCard {
+    width: 10rem;
+    height: 10rem;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .skillLogo {
+    width: 100px;
+    height: 100px;
+    padding: 0.5rem;
+  }
+
+  .skillName {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .skillSection {
+    padding: 1rem 2rem;
+  }
+
+  .sectionHeader {
+    font-size: 0.9rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
 }

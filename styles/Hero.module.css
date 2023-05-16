@@ -65,7 +65,43 @@
 }
 
 .heroImageContainer img {
-  width: 120%;
+  width: 100%;
   border-radius: 9999px;
   filter: brightness(75%)
+}
+
+@media only screen and (max-width: 1300px) {
+  .heroSection {
+    margin-top: 5rem;
+    padding: 0 5rem;
+    flex-direction: column;
+  }
+
+  .heroTextContainer {
+    width: 100%;
+  }
+
+  .heroBtnContainer {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .heroTextContainer {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroSection {
+    padding: 0 2rem;
+  }
+
+  .heroTextContainer {
+    font-size: 1.25rem;
+  }
+
+  .heroBtnContainer {
+    gap: 2rem;
+  }
 }

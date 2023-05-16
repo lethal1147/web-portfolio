@@ -35,24 +35,24 @@
   display: flex;
   border-radius: 25px;
   overflow: hidden;
-  filter: blur(2px)
 }
 
 .projectImage {
   min-width: 150px;
   height: auto;
+  filter: blur(2px)
 }
 
 .projectCard:hover,
 .projectCard:active {
-  filter: blur(0);
   transition: all linear 0.35s 0.05s;
 }
 
 .projectCard:hover .projectImage,
-.projectCard:hover .projectImage {
+.projectCard:active .projectImage {
   min-width: 175px;
   transition: all linear 0.35s 0.05s;
+  filter: blur(0);
 }
 
 .projectText {
@@ -72,6 +72,7 @@
 .projectBtn {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 4rem;
   font-weight: 600;
 }
@@ -99,4 +100,103 @@
   background-color: #394867;
   border: 2px solid #394867;
   transition: all linear 0.3s;
+}
+
+@media only screen and (max-width: 1350px) {
+  .projectsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeader {
+    font-size: 1.25rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .projectText h2 {
+    font-size: 1.25rem;
+  }
+
+  .projectText p {
+    font-size: 0.9rem;
+  }
+
+  .btnPrimary {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .btnSecondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .projectsContainer {
+    padding: 2rem 5rem;
+  }
+
+  .sectionHeader {
+    font-size: 1rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectImage {
+    min-width: 100px;
+  }
+
+  .projectsContainer {
+    padding: 1rem 2rem;
+  }
+
+  .projectCard:active .projectImage,
+  .projectCard:hover .projectImage {
+    min-width: 130px;
+  }
+
+  .sectionHeader {
+    font-size: 0.9rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .projectBtn {
+    gap: 1rem;
+  }
+
+  .btnPrimary {
+    padding: 0.5rem 1rem;
+  }
+
+  .btnSecondary {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+
+  .projectCard:active .projectImage,
+  .projectCard:hover .projectImage {
+    min-width: 110px;
+  }
+
+  .projectText h2 {
+    font-size: 1rem;
+  }
+
+  .projectText p {
+    font-size: 0.8rem;
+  }
 }
