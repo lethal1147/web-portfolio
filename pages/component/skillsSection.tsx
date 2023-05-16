@@ -24,7 +24,7 @@ const skills: skill[] = [
   { id: 1, name: 'HTML', level: 'Expert', logo: '/html-logo.png' },
   { id: 2, name: 'CSS', level: 'Upper-Intermediate', logo: '/css-logo.png' },
   { id: 3, name: 'JavaScript', level: 'Upper-Intermediate', logo: '/JavaScript-logo.png' },
-  { id: 4, name: 'React', level: 'Intermediate', logo: '/react-logo.png' },
+  { id: 4, name: 'React', level: 'Intermediate', logo: '/React-logo.png' },
   { id: 5, name: 'Git', level: 'Intermediate', logo: '/git-logo.png' },
   { id: 6, name: 'NodeJS', level: 'Intermediate', logo: '/nodejs-logo.png' },
   { id: 7, name: 'NextJS', level: 'Basic', logo: '/nextjs-logo.png' },
