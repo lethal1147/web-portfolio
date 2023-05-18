@@ -25,6 +25,18 @@
   .logoContainer img {
     margin-right: 1rem;
   }
+
+  .logoContainer:hover,
+  .logoContainer:active {
+    color: #B9BFCB;
+    transition: all linear 0.3s;
+  }
+  
+  .logoContainer:hover img, 
+  .logoContainer:active img {
+    filter: brightness(75%);
+    transition: all linear 0.3s;
+  }
   
   .blinker { 
     animation-name: blinker;

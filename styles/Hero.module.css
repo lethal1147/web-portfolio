@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 65%;
+    width: 50%;
     line-height: 35px;
     font-size: 1.75rem;
 
@@ -37,29 +37,44 @@
   padding-right: 75px;
 }
 
+.heroSocialContainer {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  color: #394867;
+}
+
+.heroSocial:hover,
+.heroSocial:active {
+  color: #212A3E;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
 .heroLink {
   color: #fff;
   background-color: #394867;
+  width: 12rem;
   border: none;
-  border-radius: 25px;
-  width: 150px;
+  border-radius: 15px;
   padding: 0.5rem 1rem;
   font-family: inherit;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
+  /* margin-left: 10rem; */
 }
 
 .heroLink:hover,
 .heroLink:active {
   background-color: #212A3E;
-  box-shadow: 0 0 0 1px #fff;
+  /* box-shadow: 0 0 0 1px #fff; */
   transition: all linear 0.25s;
   cursor: pointer;
 }
 
 .heroImageContainer {
-  width: 35%;
+  width: 40%;
   display: flex;
   /* padding: 2rem 6rem; */
 }
@@ -86,15 +101,34 @@
   }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 800px) {
+  .heroSection {
+    margin-top: 10rem
+  }
+
+  .heroSocialContainer {
+    justify-content: space-around;
+    margin: 2rem 4rem 0;
+  }
+
+  .heroLink {
+    width: 100%;
+  }
+
   .heroTextContainer {
     font-size: 1.5rem;
   }
+
+  .heroImageContainer {
+    width: 75%;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
   .heroSection {
     padding: 0 2rem;
+    margin-top: 3rem
   }
 
   .heroTextContainer {

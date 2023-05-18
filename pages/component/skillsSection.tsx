@@ -9,8 +9,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Pagination, Navigation, Autoplay, EffectCoverflow } from 'swiper';
 
-import { EffectCards } from "swiper"
-
 interface skill {
   id: number,
   name: string,
@@ -45,10 +43,8 @@ export default function SkillsSection() {
           slidesPerView={5}
           autoplay={{ delay: 3000 }}
           navigation
-          // pagination={{ clickable: true }}
           grabCursor={true}
           effect={'coverflow'}
-          // effect={"cards"}
           loop={true}
           coverflowEffect={{
             rotate: 0,
@@ -60,28 +56,21 @@ export default function SkillsSection() {
 
           className='swiper_container'
         >
-          {skills?.map((skill: skill, index: number): any => {
+          {skills?.map((skill: skill): any => {
             return (
-              <SwiperSlide className={styles.skillsContainer}>
-                <SkillCard skill={skill} index={index} />
+              <SwiperSlide key={`${skill.id}${skill.name}`} className={styles.skillsContainer}>
+                <div className={styles.skillCard}>
+                  <div className={styles.skillLogoContainer}>
+                    <img className={styles.skillLogo} src={skill.logo} alt={skill.name} />
+                  </div>
+                  <h3 className={styles.skillName}>{skill.name}</h3>
+                  {/* <p className={styles.skillLevel}>{skill.level}</p> */}
+                </div>
               </SwiperSlide>
             )
           })}
         </Swiper>
       </div>
     </section >
-  )
-}
-
-
-export function SkillCard({ skill }: any) {
-  return (
-    <div className={styles.skillCard} key={`${skill.id}${skill.name}`}>
-      <div className={styles.skillLogoContainer}>
-        <img className={styles.skillLogo} src={skill.logo} alt={skill.name} />
-      </div>
-      <h3 className={styles.skillName}>{skill.name}</h3>
-      {/* <p className={styles.skillLevel}>{skill.level}</p> */}
-    </div>
   )
 }

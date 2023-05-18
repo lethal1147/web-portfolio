@@ -3,6 +3,7 @@ import SkillsSection from './component/skillsSection'
 import Navbar from './component/navbar'
 import ProjectsSection from './component/projectsSection'
 import Footer from './component/footer'
+import Contact from './component/contact'
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <HeroSection />
       <SkillsSection />
       <ProjectsSection />
-      <Footer />
+      <Contact />
+      {/* <Footer /> */}
     </>
   )
 }

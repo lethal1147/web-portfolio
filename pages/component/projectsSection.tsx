@@ -25,25 +25,21 @@ export default function ProjectsSection() {
             </div>
             <div className={styles.projectsContainer}>
                 {projects.map((project: project): any => {
-                    return <Project project={project} />
+                    return (
+                        <div key={`${project.id}${project.name}`} className={styles.projectCard}>
+                            <img className={styles.projectImage} src={project.img} />
+                            <div className={styles.projectText}>
+                                <h2>{project.name}</h2>
+                                <p>{project.description}</p>
+                                <div className={styles.projectBtn}>
+                                    <a className={styles.btnPrimary} target='_blank' href={project.demo}>Demo</a>
+                                    <a className={styles.btnSecondary} target='_blank' href={project.repo}>Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    )
                 })}
             </div>
         </section>
-    )
-}
-
-export function Project({ project }: any) {
-    return (
-        <div key={`${project.id}${project.name}`} className={styles.projectCard}>
-            <img className={styles.projectImage} src={project.img} />
-            <div className={styles.projectText}>
-                <h2>{project.name}</h2>
-                <p>{project.description}</p>
-                <div className={styles.projectBtn}>
-                    <a className={styles.btnPrimary} target='_blank' href={project.demo}>Demo</a>
-                    <a className={styles.btnSecondary} target='_blank' href={project.repo}>Github</a>
-                </div>
-            </div>
-        </div>
     )
 }

@@ -141,13 +141,6 @@
     padding: 2rem 5rem;
   }
 
-  .sectionHeader {
-    font-size: 1rem;
-  }
-
-  .sectionHeader h2 {
-    font-size: 1.75rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
